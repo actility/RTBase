@@ -1,0 +1,12 @@
+#!/bin/sh
+# vim: ft=sh: set noet ts=4 sw=4:
+#
+#	included by all shells
+#
+
+if [ -f $ROOTACT/rtbase/base/TARGET ]; then
+	. $ROOTACT/rtbase/base/TARGET
+else
+	echo "WARNING: Can't open $ROOTACT/rtbase/base/TARGET. Need doing target"
+fi
+. $ROOTACT/rtbase/base/command.sh
